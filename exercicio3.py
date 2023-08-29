@@ -14,8 +14,6 @@ for i in range(5):
     media = (nota1 + nota2 + nota3) / 3
     dados_alunos[ra] = nota1,nota2,nota3, media 
     
-for ra in dados_alunos.values():
+for ra in dados_alunos.keys():
     print(dados_alunos)
     
-media = nota1 + nota2 + nota3 / 3
-print(media)

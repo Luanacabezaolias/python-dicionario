@@ -3,8 +3,14 @@
 - Solicite os dados ao usuário'''
 
 dados_do_cliente = {}
-for i in range(5):
-    cpf = int(input("Insira seu CPF: "))
+
+while len(dados_do_cliente) < 5:
+    cpf = input("Insira seu CPF: ")
     nome = input("Digite seu nome: ")
-    dados_do_cliente[cpf] = nome 
+    if cpf not in dados_do_cliente:
+        dados_do_cliente[cpf] = nome    # insere no dicionario 
+    else:
+        print('CPF já cadastrado. Insira novamente.')
+
+
 print(dados_do_cliente)
